@@ -1,0 +1,237 @@
+body {
+  background: #101214;
+  color: whitesmoke;
+  font-family: "Poppins", sans-serif;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.container-one{
+  padding: 10% 10%;
+}
+
+.navigation-bar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #BD7CBF;
+  position: fixed; /* Make it stick/fixed */
+  top: 0; /* Stay on top */
+  width: 100%; /* Full width */
+  transition: top 0.3s; /* Transition effect when sliding down (and up) */
+    z-index: 99;
+}
+
+.menu-btn {
+  display: none;
+}
+
+.nav-right-ul {
+  display: flex;
+}
+
+.nav-right-ul li {
+  list-style: none;
+  margin: 0 15px;
+}
+
+.nav-middle-ul {
+  display: none;
+  list-style: none;
+  position: fixed;
+  top: 10%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-color: #202427;
+}
+
+.nav-middle-ul li:hover{
+    text-decoration: underline;
+    text-decoration-color: whitesmoke;
+
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+}
+
+/* First Container */
+.container-one .row {
+  display: flex;
+  justify-content: space-around;
+}
+
+.container-one .col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.container-one .col p {
+  width: 50%;
+}
+
+/* Secound Container */
+
+.card {
+  text-align: center;
+  padding: 2vh 5vh;
+  margin: 2vh 2vh;
+  background: #282E33;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(11px);
+  -webkit-backdrop-filter: blur(11px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.corosal {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5%;
+  z-index: 1;
+}
+
+.show-more {
+  text-align: center;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+}
+.btn-hide {
+  display: flex;
+  justify-content: center;
+}
+
+.btn h1 {
+  border: 1px solid white;
+  width: fit-content;
+  display: none;
+  padding: 3%;
+}
+.btn-hide h1 {
+  border: 1px solid white;
+  width: fit-content;
+  display: none;
+  padding: 3%;
+}
+
+.corosal-parent {
+  display: flex;
+  background-color: #202427;
+  align-items: center;
+}
+
+/* third Container */
+.container-third .col{
+display: flex;
+}
+
+.card-testimonial{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+}
+
+.card-title{
+  display: flex;
+  align-items: center;
+} 
+
+.card-ratings {
+  display: flex;
+  justify-content:space-evenly;
+  align-items:center;
+}
+
+.card-ratings img{
+  width: 20%;
+}
+
+.card-title h1{
+  border-radius: 50%;
+  background-color: #BD7CBF;
+  padding: 10% 10%;
+
+}
+
+/* resposive CSS */
+
+@media screen and (max-width: 480px) {
+  .nav-right-ul {
+    display: none;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+
+  .container-one{
+    padding-top: 25%;
+  }
+
+  .nav-middle-ul{
+    z-index: 99;
+    size: 100%;
+  }
+
+  .container-one .row {
+    flex-direction: column-reverse;
+  }
+
+  .container-one .row img {
+    width: 80%;
+    justify-content: center;
+    display: flex;
+  }
+
+  .container-one .col p {
+    width: 80%;
+  }
+
+  .card p {
+    display: none;
+  }
+
+  .btn h1 {
+    display: block;
+  }
+
+  .corosal-parent {
+    flex-direction: column;
+  }
+
+  .corosal2,
+  .corosal3 { 
+    display: none;
+  }
+
+ .col-testimonial{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+
+ .card-title{
+  flex-direction: column;
+ }
+
+ .card-ratings{
+  display:flex;
+  flex-direction: row;
+  margin: 0 15%;
+ }
+}
