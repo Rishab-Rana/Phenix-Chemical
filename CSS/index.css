@@ -76,23 +76,31 @@ body {
 }
 
 /* Secound Container */
-
+.product-text{
+  text-decoration-color: #BD7CBF;
+  padding-bottom: 10px;
+  text-decoration-line: overline;
+}
 .card {
   text-align: center;
-  padding: 2vh 5vh;
-  margin: 2vh 2vh;
+  margin: 2vh 1vh;
   background: #282E33;
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   backdrop-filter: blur(11px);
   -webkit-backdrop-filter: blur(11px);
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
+  transition: transform .2s;
+}
+
+.card:hover{
+  transform: scale(0.9);
 }
 
 .card img {
   max-width: 100%;
   height: auto;
-  object-fit: contain;
+  object-fit:cover;
 }
 
 .corosal {
@@ -132,6 +140,7 @@ body {
   display: flex;
   background-color: #202427;
   align-items: center;
+  justify-content: center;
 }
 
 /* third Container */
@@ -143,7 +152,7 @@ display: flex;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 50%;
+    width: 100%;
 }
 
 .card-title{
@@ -162,7 +171,7 @@ display: flex;
 }
 
 .card-title h1{
-  border-radius: 50%;
+  border-radius: 10%;
   background-color: #BD7CBF;
   padding: 10% 10%;
 
