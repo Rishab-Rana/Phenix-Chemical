@@ -5,6 +5,7 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 .container-one{
@@ -15,9 +16,9 @@ body {
   display: flex;
   justify-content: space-between;
   background-color: #BD7CBF;
-  position: fixed; /* Make it stick/fixed */
-  top: 0; /* Stay on top */
-  width: 100%; /* Full width */
+  position: fixed; 
+  top: 0; 
+  width: 100%; 
   transition: top 0.3s; /* Transition effect when sliding down (and up) */
   z-index: 99;
   font-size: x-small;
@@ -40,7 +41,7 @@ body {
   display: none;
   list-style: none;
   position: fixed;
-  top: 10%;
+  top: 5%;
   left: 0%;
   width: 100%;
   height: 100%;
@@ -49,10 +50,8 @@ body {
 
 .nav-middle-ul li:hover{
     text-decoration: underline;
-    text-decoration-color: whitesmoke;
-
+    text-decoration-color: #BD7CBF;
 }
-
 .nav-left {
   display: flex;
   align-items: center;
@@ -153,6 +152,9 @@ background-color: #BD7CBF;
   position: relative;
 }
 
+.row-designed{
+  background-color: #BD7CBF
+}
 
 
 /* third Container */
@@ -193,7 +195,6 @@ display: flex;
 
 }
 
-
 /* contact me section */
 
 .container-four{
@@ -203,7 +204,7 @@ display: flex;
 
 .form-card{
   background-color: #202427;
-  padding: 10% 10%;
+  padding: 5% 5%;
 }
 
 /* meadia quiry */
